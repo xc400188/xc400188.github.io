@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css.css">
-    <title>总监日记表单</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="icon" href="images/01.ico">
+    <title>Decount</title>
 </head>
 
 <body>
     <div class="wrap">
         <div class="form">
             <div class="left">
-                <video src="video.mp4" muted loop autoplay></video>
+                <!--设置循环自动播放 -->
+                <video muted loop autoplay>
+                    <!-- 这里使用video标签并且使用source标签可以解决浏览器兼容问题 -->
+                    <source src="videos/video.mp4">
+                </video>
             </div>
             <div class="right">
                 <div class="right-con">
-                    <h1>NEW HERE SIGN UP</h1>
-                    <h3>NAME</h3>
-                    <input class="text" type="text">
-                    <h3>EMAIL</h3>
-                    <input class="text" type="text">
-                    <h3>PASSWORD</h3>
-                    <input class="text" type="password">
-                    <input class="btn" type="submit" value="LOGIN">
+                    <form action="#" method="post">
+                        <!-- method用于设置请求方式 -->
+                        <!-- action中的地址是后端接口地址，用于提交数据到服务器的地址 -->
+                        <h1>SIGN UP</h1>
+                        <h3>USER</h3>
+                        <input class="text" type="text" placeholder="请输入用户名" name="user" autofocus>
+                        <!-- 这里的属性type用于指定input标签类型，placeholder用于设置提示信息，name用设置数据名，autofocus用于聚集焦点 -->
+                        <h3>PASSWORD</h3>
+                        <input class="text" type="password" placeholder="请输入密码" name="password">
+                        <input class="btn" type="submit" value="LOGIN">
+                    </form>
                 </div>
             </div>
         </div>
