@@ -95,3 +95,61 @@ h3 {
 .btn:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+footer
+{
+    padding-top: 5px;
+}
+a
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: #f1f1f1;
+    margin: 45px 17px 17px 0;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+p{
+    font-size: 18px;
+    line-height: 45px;
+    transition: 0.2s linear;
+}
+a:hover p
+{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+a::before
+{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+a:hover::before
+{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes aaa
+{
+    0%{
+        top: -110%;
+        left: 90%;
+    }50%{
+        top: 10%;
+        left: -30%;
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}
