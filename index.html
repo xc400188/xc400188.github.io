@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="icon" href="images/01.ico">
     <title>Document</title>
+
 </head>
 
 <body>
@@ -20,17 +21,18 @@
             </div>
             <div class="right">
                 <div class="right-con">
-                    <form action="#" method="post">
+                    <form action="#" method="post" id="from">
                         <!-- method用于设置请求方式 -->
                         <!-- action中的地址是后端接口地址，用于提交数据到服务器的地址 -->
                         <h1>SIGN UP</h1>
                         <h3>USER</h3>
-                        <input class="text" type="text" placeholder="请输入用户名" name="user" autofocus>
+                        <input class="user" type="text" placeholder="请输入用户名" name="user" autofocus>
                         <!-- 这里的属性type用于指定input标签类型，placeholder用于设置提示信息，name用设置数据名，autofocus用于聚集焦点 -->
                         <h3>PASSWORD</h3>
-                        <input class="text" type="password" placeholder="请输入密码" name="password">
+                        <input class="password" type="password" placeholder="请输入密码" name="password">
                         <input class="btn" type="submit" value="LOGIN">
                     </form>
+                    <script src="./js/Login.js"></script>
                     <div class="footer">
                         <a href="https://www.runoob.com/jsref/dom-obj-event.html">
                             <p>D</p>
