@@ -74,7 +74,7 @@ function resetGame() {
     guessSubmit.disabled = false;
     guessField.value = '';
     guessField.focus();
-    lastResult.style.backgroundColor = 'white';
+    lastResult.style.backgroundColor = '#70b4e3';
     randomNumber = Math.floor(Math.random() * 100) + 1;
     //alert(randomNumber);
 }
