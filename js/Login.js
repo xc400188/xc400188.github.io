@@ -1,17 +1,14 @@
-const btn = document.querySelector('.btn');
 const user = document.querySelector('.user');
 const password = document.querySelector('.password');
-//检测button按钮
-function Login() {
-    let user = Number(user.value);
-    let password = password.value;
-    alert(user);
-    //for (let i = 0; i < user.length; i++) {
-    //const element = user[i];
-    if (user.value === 123 && password.value === 123) {
-        alert(33);
+const submit = document.querySelector('.btn');
+function sub() {
+
+    if (user.value == 'admin' && password.value == 'admin') {
+        location.href = 'html/number.html';
     }
-    // }
+    else {
+        user.placeholder = '请检查账号密码是否正确';
+        // password.value = '请检查密码';
+    }
 }
-btn.addEventListener('click', Login);
-// document.getElementById("from").addEventListener('click', Login);
+submit.addEventListener('click', sub);
